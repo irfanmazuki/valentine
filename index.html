@@ -1,0 +1,283 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>valentine pwease</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ee2b8c",
+              "background-light": "#f8f6f7",
+              "background-dark": "#221019",
+            },
+            fontFamily: {
+              display: ["Be Vietnam Pro", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .sticker-shadow {
+        filter: drop-shadow(4px 4px 0px rgba(238, 43, 140, 0.3));
+      }
+      .text-outline {
+        text-shadow:
+          -2px -2px 0 #fff,
+          2px -2px 0 #fff,
+          -2px 2px 0 #fff,
+          2px 2px 0 #fff;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+    <style>
+      /* Shrink background image while keeping its bottom edge aligned */
+      #love-cat {
+        transform-origin: bottom center;
+        transition: transform 220ms ease;
+      }
+
+      #love-cat.shrink {
+        transform: scale(0.84);
+      }
+
+      #clingy-text {
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display">
+    <div
+      class="relative flex min-h-screen w-full flex-col overflow-x-hidden max-w-[480px] mx-auto border-x border-gray-100 dark:border-zinc-800"
+    >
+      <!-- TopAppBar (Sticker Style) -->
+      <div
+        class="sticky top-0 z-50 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 pb-2 justify-between"
+      >
+        <div
+          class="bg-primary text-white p-2 rounded-full flex items-center justify-center sticker-shadow"
+        >
+          <span class="material-symbols-outlined text-lg">auto_awesome</span>
+        </div>
+        <div
+          class="px-4 py-1.5 bg-white dark:bg-zinc-800 border-2 border-primary rounded-full sticker-shadow"
+        >
+          <h2
+            class="text-primary text-sm font-bold leading-tight tracking-tight lowercase"
+          >
+            inviting: Ikhwan Ismail
+          </h2>
+        </div>
+        <div class="text-primary flex size-10 items-center justify-center">
+          <span class="material-symbols-outlined text-[28px]">favorite</span>
+        </div>
+      </div>
+      <div class="h-4"></div>
+      <!-- HeaderImage (Main Hero Meme) -->
+      <div class="px-4">
+        <div class="relative @container">
+          <div
+            id="love-cat"
+            class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-primary/10 rounded-xl min-h-[340px] border-4 border-white shadow-xl relative"
+            data-alt="Crying cat meme with pink heart stickers over eyes"
+            style="
+              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBF8z3FfmIVC00ctJ0uA77gCPIOu9coZt0oROgjHqArIh8oKHCNtpzejCkhonT2t5aEKS9K5UsQsva0Zjs6Z17xvHnzJwAtKEhFi-q3yTOxJu95qATxbGni6ZSjIPxo9LE3h-SdsbNl8kImIW_8e7s9IyiIO8KOOn3EIrwpcyrbrUDqohNmJFD5V3KppkCugzVsg8W4P4LnTrzk1INS_HKyAQdk3RtCpRLS3JUSOmI5yk834D2lS3GH3yFXEFZdYkuFopiIFu6R0S7O&quot;);
+            "
+          >
+            <!-- Sticker Overlays -->
+            <div
+              class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full rotate-[-12deg] border border-primary"
+            >
+              <span class="text-primary font-bold text-xs lowercase italic"
+                >very aesthetic</span
+              >
+            </div>
+            <div
+              class="absolute bottom-4 right-4 bg-primary text-white p-2 rounded-full shadow-lg"
+            >
+              <span class="material-symbols-outlined fill-[1]">favorite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HeadlineText -->
+      <div class="px-6 py-8">
+        <h1
+          id="clingy-text"
+          class="text-primary dark:text-pink-400 tracking-tight text-[36px] font-black leading-[1.1] text-center lowercase"
+        >
+          sayang, will u be my valentine?
+        </h1>
+      </div>
+      <!-- ImageGrid (Collage Section) -->
+      <div class="px-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="relative group">
+            <div
+              class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square border-4 border-white shadow-lg rotate-[-2deg]"
+              data-alt="Grumpy cat meme with floating pixel hearts"
+              style="
+                background-image:
+                  linear-gradient(
+                    0deg,
+                    rgba(238, 43, 140, 0.4) 0%,
+                    rgba(0, 0, 0, 0) 60%
+                  ),
+                  url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAmSbHtmIt16_OHjyCpeMBwE_Y-JKsxHMFlY1ogcl_eNU9AraEpNrO45u3Z-9c0CoEx-dM78m9Tc8uyDcXvnJG7XyNk1weHPsy6DEAZ606AuGRDzso_a8R_Lajrc28ZXeY3BOVwIZUAkR6IrW_NCw8CfRzFCAU8QlmJV9oP8xl4avR4R9Jct3G29a8m7nrMYaU1k8WX7D0rqxN4wf2Ooo8gaZxJkFmq85YGWb4O7lbN-Gwmjtog4VHdzkW7Zr3PsVXnOuiyuI8dzxHv&quot;);
+              "
+            >
+              <p class="text-white text-sm font-black leading-tight lowercase">
+                vibes
+              </p>
+            </div>
+          </div>
+          <div class="relative group">
+            <div
+              class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square border-4 border-white shadow-lg rotate-[3deg]"
+              data-alt="Polite cat meme with sparkly background"
+              style="
+                background-image:
+                  linear-gradient(
+                    0deg,
+                    rgba(238, 43, 140, 0.4) 0%,
+                    rgba(0, 0, 0, 0) 60%
+                  ),
+                  url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCB3dor93QHQ17q-gwx4sPwZc3_rHxfuKh_lpYvMRwzQWnDOrkfOcWd5iBnTEJVxG6qhVPK0ILfzVFVPaIfdOtPf-2iUiCdHw7OXnkNH9pCzjfMEWdDj2YfjlhzbfLK2yDDHX8KN-Cp1sEcG_S-BAUpdaJmDw8GQsfjWjdkEDoZ-MMYFayzZzKY2VfyKZCJCQnT6bae4L-rSrnp18u0j-GRFGRELLomRAWcpklR6wAaroNRij9WtNJvDiUtCPRibV3VxQVnvNZmEn0s&quot;);
+              "
+            >
+              <p class="text-white text-sm font-black leading-tight lowercase">
+                4ever
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ButtonGroup -->
+      <div
+        class="sticky bottom-0 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-xl pb-10 pt-4 px-4"
+      >
+        <div class="flex flex-col gap-3 max-w-md mx-auto">
+          <a href="yey.html">
+            <button
+              class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-5 bg-primary text-white text-xl font-black leading-normal tracking-wide shadow-[0_6px_0_rgb(190,30,110)] active:translate-y-1 active:shadow-none transition-all"
+            >
+              <span class="truncate lowercase">slayyyy</span>
+              <span class="material-symbols-outlined ml-2 fill-[1]"
+                >auto_awesome</span
+              >
+            </button>
+          </a>
+
+          <button
+            id="no-btn"
+            class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-5 bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 text-base font-bold leading-normal border-2 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50"
+          >
+            <span class="truncate lowercase">nahhh</span>
+          </button>
+        </div>
+      </div>
+      <!-- Decorative Floating Symbols -->
+      <div class="fixed top-1/4 right-2 text-primary/20 pointer-events-none">
+        <span class="material-symbols-outlined text-[64px]">emergency</span>
+      </div>
+      <div class="fixed bottom-1/3 left-2 text-primary/20 pointer-events-none">
+        <span class="material-symbols-outlined text-[48px]">flare</span>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const btn = document.getElementById("no-btn");
+        const hero = document.getElementById("love-cat");
+        const txt = document.getElementById("clingy-text");
+        if (!btn || !hero) return;
+
+        let scale = 1;
+        const minScale = 0.01;
+        const factor = 0.92;
+
+        // messages to cycle through when clicking
+        const texts = [
+          "sayang, will u be my valentine?",
+          "kucing makin kecik ni....",
+          "come on, be my valentine",
+          "tekan yess pleaseee",
+          "habisla kucing makin kecik",
+          "kenapaa????",
+          "tekan la atas tu...",
+          "tak sayang titew kee???",
+          "pleaseeee...",
+          "sayanggggg....",
+          "nak kucing atas hilang ke :(",
+          "jangan tinggalkan titew",
+          "okayla... i'll be waiting...",
+          "forever...",
+          "....",
+          "<3",
+          "jet lagi...",
+          "jet lagi...",
+          "memang taknak tekan ke?",
+          ":((",
+          "the kucing is gone...",
+          "i'm sad now...",
+          "cedihnyaaa...",
+          "i hope you change your mind...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+          "i'll be here...",
+        ];
+        let tIndex = 0;
+        if (txt) txt.textContent = texts[tIndex];
+
+        btn.addEventListener("click", function () {
+          scale = Math.max(minScale, +(scale * factor).toFixed(3));
+          hero.style.transform = `scale(${scale})`;
+
+          if (txt) {
+            tIndex = (tIndex + 1) % texts.length;
+            txt.textContent = texts[tIndex];
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

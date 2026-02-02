@@ -1,0 +1,303 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rotating Cat Aura Celebration</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ee2b8c",
+              "vibey-purple": "#a855f7",
+              "vibey-orange": "#f97316",
+              "neon-pink": "#ff007f",
+              "aura-gold": "#ffd700",
+            },
+            fontFamily: {
+              display: ["Be Vietnam Pro", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @keyframes rotate-spin-blur {
+        from {
+          transform: rotate(0deg);
+        }
+        50% {
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes aura-pulse {
+        0% {
+          transform: scale(1) rotate(0deg);
+          opacity: 0.5;
+        }
+        50% {
+          transform: scale(1.4) rotate(180deg);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1) rotate(360deg);
+          opacity: 0.5;
+        }
+      }
+      @keyframes sparkle-outward {
+        0% {
+          transform: translate(0, 0) scale(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+            scale(1.5);
+          opacity: 0;
+        }
+      }
+      @keyframes bg-shift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-2px) rotate(-1deg);
+        }
+        75% {
+          transform: translateX(2px) rotate(1deg);
+        }
+      }
+      .animate-spin-rapid {
+        animation: rotate-spin-blur 0.8s linear infinite;
+      }
+      .animate-aura {
+        animation: aura-pulse 3s ease-in-out infinite;
+      }
+      .animate-sparkle-out {
+        animation: sparkle-outward 2s linear infinite;
+      }
+      .psychedelic-gradient {
+        background: linear-gradient(
+          -45deg,
+          #ff007f,
+          #a855f7,
+          #f97316,
+          #ee2b8c,
+          #8b5cf6
+        );
+        background-size: 400% 400%;
+      }
+      .text-glow {
+        text-shadow:
+          0 0 15px rgba(255, 255, 255, 0.9),
+          0 0 30px rgba(255, 0, 127, 0.7);
+      }
+      .motion-blur-ring {
+        box-shadow:
+          0 0 40px 10px rgba(255, 255, 255, 0.4),
+          inset 0 0 20px 5px rgba(255, 255, 255, 0.3);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="font-display overflow-hidden bg-black antialiased">
+    <div
+      class="relative flex h-screen w-full flex-col overflow-hidden max-w-[480px] mx-auto psychedelic-gradient animate-bg"
+    >
+      <div class="absolute inset-0 pointer-events-none z-10">
+        <span
+          class="material-symbols-outlined absolute text-yellow-200 animate-sparkle-out top-1/2 left-1/2 --tw-translate-x-[-150px] --tw-translate-y-[-200px]"
+          style="animation-delay: 0s"
+          >star</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-white animate-sparkle-out top-1/2 left-1/2 --tw-translate-x-[180px] --tw-translate-y-[-100px]"
+          style="animation-delay: 0.5s"
+          >flare</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-pink-200 animate-sparkle-out top-1/2 left-1/2 --tw-translate-x-[-120px] --tw-translate-y-[220px]"
+          style="animation-delay: 1.2s"
+          >emergency</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-orange-200 animate-sparkle-out top-1/2 left-1/2 --tw-translate-x-[140px] --tw-translate-y-[180px]"
+          style="animation-delay: 0.8s"
+          >auto_awesome</span
+        >
+        <span
+          class="material-symbols-outlined absolute text-white animate-sparkle-out top-1/2 left-1/2 --tw-translate-x-[200px] --tw-translate-y-[0px]"
+          style="animation-delay: 1.5s"
+          >colors_spark</span
+        >
+      </div>
+      <div
+        class="absolute inset-0 pointer-events-none z-0 opacity-40 mix-blend-overlay"
+        style="
+          background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDJs9LwdJujQL0YKp5mIPj3rXGOOboFVg-fd9FF8YriG9cwlgzRgqXHexYRqo3WBExWaOo9yl2tEXUlYWjTdBOE9Ri-KMx1sfIOetcjy186VofqF1jj9016J5M42IdZ4wLbbHwn33ldbtocB7Koe6SID89Emv_KAJPVcbLlW5idvbSPzPUKmj03fPzUQyTj-JoQwGTEQfeXJ0qGpVEbKykFu5QEA-Mjvpmv5dc4yoMDo2iSBJMcW_FdEJD28IdqQIj-iq41s8wMb_CB&quot;);
+        "
+      ></div>
+      <div
+        class="relative z-40 flex flex-col items-center justify-between h-full py-14 px-6 text-center"
+      >
+        <div class="space-y-4 animate-shake">
+          <h1
+            class="text-white text-8xl font-black italic tracking-tighter text-glow drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] uppercase leading-none"
+          >
+            PERIOD!
+          </h1>
+          <div
+            class="inline-block bg-white/40 backdrop-blur-2xl px-8 py-3 rounded-full border-2 border-white/60 shadow-2xl"
+          >
+            <p
+              class="text-white text-xl font-black tracking-[0.2em] uppercase drop-shadow-md"
+            >
+              CAMNI LA BARU BERAYAQ
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative w-full aspect-square flex items-center justify-center"
+        >
+          <div
+            class="absolute w-[420px] h-[420px] rounded-full border-4 border-white/20 animate-aura blur-sm"
+          ></div>
+          <div
+            class="absolute w-[380px] h-[380px] rounded-full bg-gradient-to-tr from-pink-500/30 to-yellow-300/30 blur-[60px] animate-pulse"
+          ></div>
+          <div
+            class="absolute inset-0 animate-spin"
+            style="animation-duration: 4s"
+          >
+            <span
+              class="material-symbols-outlined absolute top-0 left-1/2 -translate-x-1/2 text-yellow-300 text-4xl fill-[1] drop-shadow-[0_0_15px_rgba(255,215,0,0.8)]"
+              >star</span
+            >
+            <span
+              class="material-symbols-outlined absolute bottom-0 left-1/2 -translate-x-1/2 text-white text-3xl drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+              >flare</span
+            >
+          </div>
+          <div
+            class="absolute inset-0 animate-spin"
+            style="animation-duration: 3s; animation-direction: reverse"
+          >
+            <span
+              class="material-symbols-outlined absolute left-0 top-1/2 -translate-y-1/2 text-pink-300 text-4xl drop-shadow-[0_0_15px_rgba(255,100,200,0.8)]"
+              >auto_awesome</span
+            >
+            <span
+              class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 text-orange-300 text-3xl fill-[1]"
+              >star</span
+            >
+          </div>
+          <div class="relative w-72 h-72 group">
+            <div
+              class="absolute -inset-4 rounded-full border-[10px] border-white/40 motion-blur-ring animate-spin-rapid"
+            ></div>
+            <div
+              class="relative w-full h-full rounded-full border-[10px] border-white shadow-[0_0_100px_rgba(255,255,255,1)] overflow-hidden animate-spin-rapid bg-white ring-4 ring-white/50"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBF8z3FfmIVC00ctJ0uA77gCPIOu9coZt0oROgjHqArIh8oKHCNtpzejCkhonT2t5aEKS9K5UsQsva0Zjs6Z17xvHnzJwAtKEhFi-q3yTOxJu95qATxbGni6ZSjIPxo9LE3h-SdsbNl8kImIW_8e7s9IyiIO8KOOn3EIrwpcyrbrUDqohNmJFD5V3KppkCugzVsg8W4P4LnTrzk1INS_HKyAQdk3RtCpRLS3JUSOmI5yk834D2lS3GH3yFXEFZdYkuFopiIFu6R0S7O&quot;);
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-[conic-gradient(from_0deg,transparent,rgba(255,255,255,0.2),transparent_40deg)] opacity-60"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="absolute -top-6 -right-2 bg-yellow-400 p-4 rounded-2xl rotate-12 shadow-[0_10px_20px_rgba(0,0,0,0.3)] animate-bounce"
+          >
+            <span class="material-symbols-outlined text-white text-4xl fill-[1]"
+              >star</span
+            >
+          </div>
+          <div
+            class="absolute -bottom-4 -left-6 bg-pink-500 p-4 rounded-full -rotate-12 shadow-[0_10px_20px_rgba(0,0,0,0.3)] animate-pulse"
+          >
+            <span class="material-symbols-outlined text-white text-4xl fill-[1]"
+              >favorite</span
+            >
+          </div>
+        </div>
+        <div class="w-full space-y-8">
+          <div class="flex justify-center gap-4">
+            <div
+              class="bg-white/30 p-4 rounded-3xl backdrop-blur-xl border border-white/40 shadow-xl hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-white text-4xl"
+                >celebration</span
+              >
+            </div>
+            <div
+              class="bg-white/30 p-4 rounded-3xl backdrop-blur-xl border border-white/40 shadow-xl hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-white text-4xl"
+                >pets</span
+              >
+            </div>
+            <div
+              class="bg-white/30 p-4 rounded-3xl backdrop-blur-xl border border-white/40 shadow-xl hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-white text-4xl"
+                >auto_awesome</span
+              >
+            </div>
+          </div>
+          <button
+            class="w-full bg-white text-primary h-24 rounded-[2.5rem] font-black text-3xl shadow-[0_12px_0_rgb(220,220,220)] active:shadow-none active:translate-y-[12px] transition-all flex items-center justify-center gap-4 uppercase tracking-tighter group overflow-hidden relative"
+          >
+            <span
+              class="relative z-10 group-hover:scale-110 transition-transform duration-200"
+              >LOVE YOU <br />SAYANGGGGG</span
+            >
+            <span
+              class="material-symbols-outlined fill-[1] text-4xl animate-bounce relative z-10"
+              >favorite</span
+            >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
+            ></div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
